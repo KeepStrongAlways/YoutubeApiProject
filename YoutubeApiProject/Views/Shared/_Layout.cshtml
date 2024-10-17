@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Youtube Api Project</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/YoutubeApiProject.styles.css" asp-append-version="true" />
+</head>
+<body class="divHome">
+    <header class="site-header">
+        <ul>
+            <li>
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Youtube Api Project</a>
+            </li>
+            <li>
+                <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li>
+                <a class="nav-link" asp-controller="Youtube" asp-action="Index">Search Music</a>
+            </li>
+        </ul> 
+    </header>
+</body>    
+   
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            &copy; 2024 - YoutubeApiProject by Akif- <a href="Youtube">Search Music </a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</html>

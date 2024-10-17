@@ -1,0 +1,123 @@
+﻿/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8e8e8;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.header {
+    padding: 20px;
+    background-color: #333; /* Dark background for header */
+    color: white; /* White text */
+}
+
+h1, p {
+    margin: 0 0 15px; /* Space below headers and paragraphs */
+}
+
+button[type="button"] {
+    background: linear-gradient(135deg, #ff5757, #ff0000); /* Gradient red */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 12px 30px; /* Extra padding for a substantial button */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    border-radius: 50px; /* Fully rounded corners for a pill shape */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover and active states */
+    letter-spacing: 1px; /* Add space between letters for a clean look */
+    margin-bottom: 30px; 
+}
+
+    button[type="button"]:hover {
+        background: linear-gradient(135deg, #ff6a6a, #e60000); /* Slightly lighter gradient on hover */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+        transform: translateY(-3px); /* Slight lift on hover */
+    }
+
+    button[type="button"]:active {
+        background: linear-gradient(135deg, #e60000, #b30000); /* Darker gradient on click */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slight shadow on click */
+        transform: scale(0.98); /* Slight shrink on click */
+    }
+
+    button[type="button"]:focus {
+        outline: none; /* Remove default focus outline */
+        box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.4); /* Subtle red focus ring */
+    }
+
+
+.search-btn {
+    background: linear-gradient(135deg, #ff0000, #cc0000); /* Gradient red */
+    color: white;
+    padding: 12px 24px; /* Increased padding */
+    text-decoration: none;
+    border-radius: 25px; /* More rounded corners */
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: background 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+    .search-btn:hover {
+        background: linear-gradient(135deg, #cc0000, #990000); /* Darker gradient on hover */
+        transform: translateY(-2px); /* Slight lift on hover */
+    }
+
+/* Timeline grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+    padding: 40px; /* Space around the grid */
+    background-color: #c2c2c2; /* Match the body background */
+}
+
+.grid-item {
+    background-color: white; /* White background for each video item */
+    border-radius: 12px; /* Rounded corners */
+    padding: 15px; /* Inner padding */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+    text-align: center; /* Center text in each grid item */
+    transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition for effects */
+}
+
+    .grid-item:hover {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+        transform: translateY(-2px); /* Slight lift on hover */
+    }
+
+    .grid-item iframe {
+        width: 100%; /* Full width iframe */
+        height: auto; /* Responsive height */
+        border-radius: 12px; /* Rounded iframe corners */
+        margin-bottom: 5px; /* Space between iframe and text */
+    }
+
+    .grid-item h3 {
+        font-size: 18px;
+        margin: 5px 0; /* Slightly increased space above and below titles */
+        color: #333; /* Darker color for better contrast */
+    }
+
+    .grid-item p {
+        font-size: 14px;
+        color: #666; /* Light grey for description text */
+        margin-bottom: 1px 0; /* Slightly increased space above and below titles */
+    }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .grid-item h3 {
+        font-size: 16px; /* Smaller titles on small screens */
+    }
+
+    .grid-item p {
+        font-size: 12px; /* Smaller text on small screens */
+    }
+}

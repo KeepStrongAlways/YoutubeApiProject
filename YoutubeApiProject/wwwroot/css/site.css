@@ -1,0 +1,229 @@
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* This allows the main content to take up available space */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+}
+
+.main-content {
+    flex: 1; /* This allows the main content to take up available space */
+}
+
+footer {
+    background-color: #333; /* Change to your preferred footer color */
+    padding: 2px;
+    text-align: center;
+    color: white; /* Set text color to white */
+}
+
+    /* Additional styles for footer content */
+    footer a {
+        color: white; /* Set link color to white */
+        text-decoration: none; /* Remove underline from links */
+    }
+
+        footer a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+.divHome {
+    background-color: #e8e8e8;
+}
+
+header {
+    background-color: #333; /* Set background color for the header */
+    height: 60px; /* Adjust the height here */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+/* Navigation list styles */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flex for horizontal layout */
+    justify-content: center; /* Center the navigation items */
+}
+
+/* List item styles */
+li {
+    margin: 0 15px; /* Space between list items */
+}
+
+/* Link styles */
+.nav-link {
+    display: block;
+    color: white; /* Text color */
+    text-align: center;
+    padding: 10px 20px; /* Adjust padding for height */
+    text-decoration: none; /* Remove underline */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for effects */
+}
+
+/* Hover effect */
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.center {
+    width: 50%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-custom {
+    background: linear-gradient(135deg, #ff5757, #ff0000); /* Gradient red */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 12px 30px; /* Extra padding for a substantial button */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    border-radius: 50px; /* Fully rounded corners for a pill shape */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover and active states */
+    letter-spacing: 1px; /* Add space between letters for a clean look */
+    margin-bottom: 30px;
+}
+
+    .btn-custom:hover {
+        background: linear-gradient(135deg, #ff6a6a, #e60000); /* Slightly lighter gradient on hover */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+        transform: translateY(-3px); /* Slight lift on hover */
+    }
+
+    .btn-custom:active {
+        background: linear-gradient(135deg, #e60000, #b30000); /* Darker gradient on click */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slight shadow on click */
+        transform: scale(0.98); /* Slight shrink on click */
+    }
+
+    .btn-custom:focus {
+        outline: none; /* Remove default focus outline */
+        box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.4); /* Subtle red focus ring */
+    }
+
+.rcornerSeacrBar {
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    width: 350px;
+    height: 20px;
+    border: 2px solid #ddd; /* Light border for a clean look */
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth transition for hover, focus, and active states */
+    outline: none; /* Remove default outline */
+    background-color: #f9f9f9; /* Light background for a subtle look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+    .rcornerSeacrBar:hover {
+        background-color: #ffffff; /* Brighter background on hover */
+        border-color: #ff5757; /* Change border color to red on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    }
+
+    .rcornerSeacrBar:focus {
+        border-color: #ff0000; /* Red border on focus */
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.4); /* Glowing red shadow on focus */
+        background-color: #fff; /* Keep background white on focus */
+    }
+
+    .rcornerSeacrBar:active {
+        background-color: #f0f0f0; /* Slightly darker background on click */
+        border-color: #b30000; /* Darker red border on active state */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    }
+
+.video-container {
+    padding: 20px 0; /* Space around each video */
+    border-bottom: 1px solid #ccc; /* Horizontal line */
+}
+
+.video-container:last-child {
+        border-bottom: none; /* Remove border for the last video */
+        border-block-color:black; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexible column width */
+    gap: 5px; /* Gap between items */
+    padding: 40px;
+    grid-auto-rows: minmax(300px, auto); /* Set a minimum height */
+}
+
+.grid-item {
+    background-color: #ffffff; /* Set the background color to white */
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100%; /* Ensure the item takes full height available */
+    display: flex; /* Use flexbox to manage content layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space between items */
+    overflow: hidden; /* Hide any overflow */
+}
+
+    .grid-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .grid-item h3 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .grid-item p {
+        font-size: 14px;
+        color: #666;
+        overflow: hidden; /* Hide overflow text */
+        text-overflow: ellipsis; /* Show ellipsis for overflow text */
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+
+.btnPlay {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .btnPlay:hover {
+        background-color: #cc0000;
+    }
